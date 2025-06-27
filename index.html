@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Minha Lista de Compras</h1>
+        
+        <form id="form-adicionar">
+            <input 
+                type="text" 
+                id="item-input" 
+                placeholder="Digite um item para adicionar..."
+                autocomplete="off"
+            >
+            <button type="submit">Adicionar</button>
+        </form>
+
+        <h2>Itens a Comprar</h2>
+        <ul id="lista-de-itens">
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
