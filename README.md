@@ -1,2 +1,2 @@
 # Trabalho-DW
-Desenvolvido por Leandro e Pesro
+Desenvolvido por Leandro e Pedro
