@@ -97,6 +97,10 @@ h2 {
     background-color: #f8f9fa;
 }
 
+#lista-de-itens li .texto-item {
+    flex-grow: 1;
+}
+
 #lista-de-itens li.comprado .texto-item {
     text-decoration: line-through;
     color: #aaa;
@@ -109,14 +113,17 @@ h2 {
 }
 
 .botao-acao {
+    background: none;
     color: white;
     border: none;
-    border-radius: 6px;
-    padding: 6px 12px;
+    border-radius: 50%; /* Faz o botão ficar redondo */
+    width: 36px; /* Largura fixa */
+    height: 36px; /* Altura fixa */
     cursor: pointer;
-    font-weight: bold;
-    font-size: 14px;
-    transition: opacity 0.3s ease;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    display: flex; /* Para centralizar o SVG */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
 }
 
 .botao-acao:hover {
