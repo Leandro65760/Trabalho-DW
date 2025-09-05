@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,57 +7,75 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
     color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 20px;
 }
 
 .container {
-    background-color: #fff;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width: 90%;
-    max-width: 500px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    width: 95%;
+    max-width: 600px;
 }
 
 h1, h2 {
     text-align: center;
-    margin-bottom: 20px;
-    color: #4a4a4a;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
 }
 
 #form-adicionar {
     display: flex;
-    gap: 10px;
-    margin-bottom: 25px;
+    gap: 15px;
+    margin-bottom: 30px;
 }
 
 #item-input {
     flex-grow: 1;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
     font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+#item-input:focus {
+    outline: none;
+    border-color: #007bff;
 }
 
 #form-adicionar button {
-    padding: 10px 15px;
+    padding: 12px 20px;
     border: none;
-    background-color: #28a745;
+    background-color: #007bff;
     color: white;
     font-size: 16px;
-    border-radius: 4px;
+    font-weight: 500;
+    border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 #form-adicionar button:hover {
-    background-color: #218838;
+    background-color: #0056b3;
 }
 
 #lista-de-itens {
@@ -66,32 +86,55 @@ h1, h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px;
-    border-bottom: 1px solid #eee;
+    padding: 15px;
+    border-bottom: 1px solid #f0f0f0;
     cursor: pointer;
     transition: background-color 0.2s ease;
+    word-break: break-all;
 }
 
 #lista-de-itens li:hover {
-    background-color: #f9f9f9;
+    background-color: #f8f9fa;
 }
 
-#lista-de-itens li.comprado span {
+#lista-de-itens li.comprado .texto-item {
     text-decoration: line-through;
-    color: #888;
+    color: #aaa;
+}
+
+.botoes-item {
+    display: flex;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.botao-acao {
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: opacity 0.3s ease;
+}
+
+.botao-acao:hover {
+    opacity: 0.8;
+}
+
+.botao-editar {
+    background-color: #ffc107; /* Amarelo */
 }
 
 .botao-remover {
-    background-color: #dc3545;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 5px 10px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    background-color: #dc3545; /* Vermelho */
 }
 
-.botao-remover:hover {
-    background-color: #c82333;
+.input-edicao {
+    flex-grow: 1;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
