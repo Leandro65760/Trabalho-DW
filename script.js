@@ -192,9 +192,12 @@ listaDeItens.addEventListener('click', (event) => {
 
     // Verifica se o botão clicado é o de remover.
     if (elementoClicado.classList.contains('botao-remover')) {
-        const itemParaRemover = elementoClicado.closest('li');
-        itemParaRemover.remove();
-        salvarDados();
+        // Exibe uma caixa de diálogo de confirmação.
+        if (confirm('Tem certeza que deseja remover este item?')) {
+            const itemParaRemover = elementoClicado.closest('li');
+            itemParaRemover.remove();
+            salvarDados();
+        }
     } 
     // Verifica se o botão clicado é o de editar.
     else if (elementoClicado.classList.contains('botao-editar')) {
