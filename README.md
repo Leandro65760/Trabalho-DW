@@ -1,2 +1,2 @@
 # Trabalho-DW
-Desenvolvido por Leandro e Pedro
+Desenvolvido por Leandro F., Mariana Basso Pastorello e Laís Maeda
